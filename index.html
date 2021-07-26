@@ -16,6 +16,12 @@
   <link rel="stylesheet" href="css/vendor/animate.min.css">
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
 
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
@@ -127,17 +133,10 @@
               </div>
 
               <div class="row gutter-v4 align-items-stretch mb-5">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-  
-                  <a href="#" class="grid-item blog-item w-100 h-100" data-fancybox="gal" data-caption="">
-                    <div class="overlay">
-                      <div class="portfolio-item-content">
-                        <h3>Map will be displayed here</h3>
-                      </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">                  
+                    <div id="map" style="height: 900px;">
+
                     </div>
-                    <img src="images/earthquake.jpg" class="lazyload" alt="Image" />
-                  </a>
-  
                 </div>
               </div>
              
@@ -213,7 +212,7 @@
 
   <script src="js/scripts-dist.js"></script>
   <script src="js/main.js"></script>
-
+  <script src="js/map.js"></script>
 
 </body>
 
